@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    background-color: rgb(219, 216, 216);
+    overflow: hidden;
+}
+
+.center{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+span{
+    color: #cf962a;
+}
+header{
+    height: 200px;
+    padding: 20px 0;
+}
+.logo{
+    width: 50%;
+}
+
+.logo img{
+    width: 200px;
+    margin-left: 35px;
+}
+
+.menu{
+    width: 50%;
+    text-align: right;
+    margin-top: 5%;
+}
+
+.menu a{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+section .sobre{
+    height: calc(100% - 200px);
+    position: relative;
+}
+.extras{
+    position: absolute;
+    bottom: -80px;
+    right: -100px;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background-color: #fe1835;
+}
+.extras img{
+
+    transition: 2s cubic-bezier(0.6, 0.18, 0, 0.93);
+}
+.extras img:hover{
+    transform: translateX(-40%);
+    transition: 1.5s cubic-bezier(0.6, 0.18, 0, 0.93);
+}
+.bolinha{
+    position: absolute;
+    bottom: -80px;
+    left: -120px;
+    width: 430px;
+    height: 400px;
+    border-radius: 50%;
+    box-shadow: 3px 8px 5px rgb(70, 69, 69);
+    background-color: #999595; 
+    z-index: -1;
+}
+.bolinha img{
+    width: 135%;
+    height: 100%;
+
+}
+
+
+.textoSobre{
+    margin-top: 50px;
+    margin-left: 50px;
+}
+.textoSobre p {
+    margin-left: 0px;
+}
+.botao a button{
+    border: 2px solid rgb(209, 61, 8);
+    height: 40px;
+    background-color: rgb(209, 61, 8);
+    margin-top: 20px;
+    border-radius: 3px;
+    cursor: pointer;
+    opacity: 0.7;
+    margin-left: 150px;
+}
